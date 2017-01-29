@@ -2,7 +2,7 @@ window.onload = (function () {
     var height = 500;
     var width = 1500;
 
-    d3.csv("/resources/biopics.csv", function(data){
+    d3.csv("./resources/biopics.csv", function(data){
         var manipulated = manipulateData(data);
         var body = d3.select("body");
 
